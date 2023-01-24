@@ -14,7 +14,7 @@ ENV URL_INFCLOUD=https://www.inf-it.com/InfCloud_0.13.1.zip
 ENV WEBROOT=/var/www
 ENV BAIKAL_DATA=${WEBROOT}/baikal/Specific
 
-ARG TIMEZONE=Europe/Berlin
+ARG TIMEZONE=America/Sao_Paulo
 ENV TIMEZONE=${TIMEZONE}
 
 WORKDIR ${WEBROOT}
