@@ -9,6 +9,7 @@ build:
 			--build-arg TIMEZONE=$(timezone) \
 			--tag "$(image):$(tag)" \
 			--tag "$(image):latest" \
+			-t kolohals/infcloudbaikal:latest \
 			$(args) .
 
 export:
@@ -16,7 +17,9 @@ export:
 	docker image save --output "$(image).$(tag).tgz" "$(image):$(tag)"
 
 run:
-	docker run \
+	docker run -d \
+			--name=infcloudbaikal \
+			-e TZ=America/Sao_Paulo \
 			--publish 58851:8800 \
 			--volume "$$(pwd)/baikal:/var/www/baikal/Specific" \
 			$(args) $(image)
