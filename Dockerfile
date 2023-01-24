@@ -9,8 +9,10 @@ LABEL org.label-schema.name="baikal+infcloud - CalDAV/CardDAV web stack" \
 # The fork of 0.4.6 with fixed php7.2 each() deprecation and updates sabredav
 # see PR https://github.com/sabre-io/Baikal/pull/768 was merged and released
 # as Version 0.5.2 which fixed issues with php7
-ENV URL_BAIKAL=https://github.com/sabre-io/Baikal/releases/download/0.5.2/baikal-0.5.2.zip
-ENV URL_INFCLOUD=https://www.inf-it.com/InfCloud_0.13.1.zip
+#ENV URL_BAIKAL=https://github.com/sabre-io/Baikal/releases/download/0.5.2/baikal-0.5.2.zip
+#ENV URL_INFCLOUD=https://www.inf-it.com/InfCloud_0.13.1.zip
+ENV URL_BAIKAL=https://github.com/ameisehaufen/infcloudbaikal/raw/master/baikal-0.9.3.zip
+ENV URL_INFCLOUD=https://github.com/ameisehaufen/infcloudbaikal/raw/master/InfCloud_0.13.1.zip
 ENV WEBROOT=/var/www
 ENV BAIKAL_DATA=${WEBROOT}/baikal/Specific
 
