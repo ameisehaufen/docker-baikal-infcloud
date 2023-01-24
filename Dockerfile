@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3
 
 # See http://label-schema.org/rc1/ and https://microbadger.com/labels
 LABEL org.label-schema.name="baikal+infcloud - CalDAV/CardDAV web stack" \
