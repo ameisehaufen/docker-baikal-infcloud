@@ -1,4 +1,7 @@
 # docker-baikal-infcloud
+
+Forked from https://github.com/bjuretko/docker-baikal-infcloud
+
 - Dockerized 
 - [lighttpd](https://www.lighttpd.net/)
 - php7 + sqlite3 and mysql support
